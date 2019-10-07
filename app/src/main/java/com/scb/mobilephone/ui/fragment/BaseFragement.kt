@@ -2,7 +2,7 @@ package com.scb.mobilephone.ui.fragment
 
 import android.content.Context
 import androidx.fragment.app.Fragment
-import com.scb.mobilephone.ui.activity.Injectable
+import com.scb.mobilephone.ui.dagger.Injectable
 import dagger.android.support.AndroidSupportInjection
 
 abstract class BaseFragement : Fragment(), Injectable {

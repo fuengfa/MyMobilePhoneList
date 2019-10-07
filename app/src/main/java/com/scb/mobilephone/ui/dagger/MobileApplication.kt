@@ -1,4 +1,4 @@
-package com.scb.mobilephone.ui.activity
+package com.scb.mobilephone.ui.dagger
 
 import android.app.Activity
 import android.app.Application

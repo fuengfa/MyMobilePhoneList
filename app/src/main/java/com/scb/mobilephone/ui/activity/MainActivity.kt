@@ -10,7 +10,6 @@ import com.scb.mobilephone.ui.adapter.SectionsPagerAdapter
 import com.scb.mobilephone.ui.model.AppDatbase
 import com.scb.mobilephone.ui.model.CMWorkerThread
 import kotlinx.android.synthetic.main.activity_main.*
-import javax.inject.Inject
 
 class MainActivity : BaseActivity(){
 

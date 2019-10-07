@@ -1,12 +1,12 @@
-package com.scb.mobilephone.ui.activity
+package com.scb.mobilephone.ui.dagger
 
 import android.app.Activity
 import android.app.Application
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import androidx.fragment.app.FragmentHostCallback
 import androidx.fragment.app.FragmentManager
+import com.scb.mobilephone.ui.activity.DaggerAppComponent
 import dagger.android.AndroidInjection
 import dagger.android.support.AndroidSupportInjection
 import dagger.android.support.HasSupportFragmentInjector

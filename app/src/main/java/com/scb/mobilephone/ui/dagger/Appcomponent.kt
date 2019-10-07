@@ -1,6 +1,8 @@
-package com.scb.mobilephone.ui.activity
+package com.scb.mobilephone.ui.dagger
 
 import android.app.Application
+import com.scb.mobilephone.ui.dagger.module.ActivityModule
+import com.scb.mobilephone.ui.dagger.module.PresenterModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule

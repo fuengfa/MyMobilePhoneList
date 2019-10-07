@@ -1,5 +1,7 @@
-package com.scb.mobilephone.ui.activity
+package com.scb.mobilephone.ui.dagger.module
 
+import com.scb.mobilephone.ui.activity.MainActivity
+import com.scb.mobilephone.ui.activity.MobileDetailActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

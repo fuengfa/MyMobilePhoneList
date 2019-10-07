@@ -1,6 +1,5 @@
 package com.scb.mobilephone.ui.fragment
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +9,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.scb.mobilephone.R
-import com.scb.mobilephone.ui.activity.LogString
+import com.scb.mobilephone.ui.dagger.ProviderClass.LogString
 import com.scb.mobilephone.ui.activity.MobileDetailActivity
 import com.scb.mobilephone.ui.activity.OnSortClickListener
 import com.scb.mobilephone.ui.adapter.MobileAdapter
@@ -18,7 +17,6 @@ import com.scb.mobilephone.ui.adapter.OnMobileClickListener
 import com.scb.mobilephone.ui.model.AppDatbase
 import com.scb.mobilephone.ui.model.MobileModel
 import com.scb.mobilephone.ui.model.showToast
-import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_mobile.*
 import javax.inject.Inject
 
