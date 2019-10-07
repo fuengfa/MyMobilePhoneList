@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <androidx.viewpager.widget.ViewPager
+                        android:background="#FFFFFF"
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+                </androidx.viewpager.widget.ViewPager>
+
+                <TextView
+                        android:id="@+id/detailName"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Moto E4 Plus"/>
+                <TextView
+                        android:id="@+id/detailDes"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fevelop	a	native	mobile	app	that	provides	information	about	the	mobile	phones	currently	available	in	the
+market.	This	app	should	consume	2	endpoints	from	a	web	service	and	should	display	the	information	on	a	list
+and	detailed	page."/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:padding="5dp"
+                    android:id="@+id/linearDetail"
+                    android:background="@drawable/layout_light"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_weight="3"
+                        android:id="@+id/detailRating"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price: 177.7"
+                />
+
+                <TextView
+                        android:layout_weight="30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "/>
+
+                <TextView
+                        android:gravity="right"
+                        android:id="@+id/detailPrice"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Rating: 3.9"
+                />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

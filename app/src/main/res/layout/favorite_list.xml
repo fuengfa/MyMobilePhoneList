@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@drawable/layout_corner"
+              android:orientation="vertical"
+              android:padding="8dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:layout_width="match_parent"
+              android:layout_marginBottom="5dp"
+              android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+        <ImageView android:id="@+id/faveImage"
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:src="@drawable/phone"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_marginLeft="10dp"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:gravity="center"
+                          android:layout_height="wrap_content">
+                <TextView android:id="@+id/favName"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textSize="18dp"
+                          android:textStyle="bold"
+                          android:text="Motor E4 Plus"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                <TextView android:id="@+id/favPrice"
+                          android:textColor="#7C7575"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="171.99"
+                        />
+            </LinearLayout>
+            <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="    "/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <TextView android:id="@+id/faveRating"
+                          android:textColor="#B3B0B0"
+                          android:layout_gravity="center"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:text="Rating: 4.33"
+                          android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
