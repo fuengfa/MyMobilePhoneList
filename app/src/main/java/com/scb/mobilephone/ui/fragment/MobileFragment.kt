@@ -23,7 +23,8 @@ import javax.inject.Inject
 class MobileFragment : BaseFragement(),
     OnMobileClickListener, OnSortClickListener, MobileFragmentPresenterInterface {
 
-    private var presenter = MobileFragmentPresenter(this)
+    @Inject
+    lateinit var presenter: MobileFragmentPresenter
     private var mobileAdapter = MobileAdapter(this)
     private lateinit var recyclerViewMobile: RecyclerView
     private lateinit var mobileList: List<MobileModel>

@@ -8,8 +8,9 @@ import com.scb.mobilephone.ui.model.MobileModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import javax.inject.Inject
 
-class MobileFragmentPresenter(val view: MobileFragmentPresenterInterface) {
+class MobileFragmentPresenter @Inject constructor(val view: MobileFragmentPresenterInterface) {
 
     private var roomDatabase: AppDatbase? = null
     private var cmWorkerThread: CMWorkerThread = CMWorkerThread("favorite").also {

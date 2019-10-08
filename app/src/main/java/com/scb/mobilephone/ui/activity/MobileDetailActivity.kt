@@ -8,12 +8,14 @@ import com.scb.mobilephone.R
 import com.scb.mobilephone.ui.adapter.PhotoPagerAdapter
 import com.scb.mobilephone.ui.model.MobileModel
 import com.scb.mobilephone.ui.model.Pictures
+import javax.inject.Inject
 
 
-class MobileDetailActivity : AppCompatActivity(), MobileDetailInterface {
+class MobileDetailActivity : BaseActivity(), MobileDetailInterface {
 
     private lateinit var mobile: MobileModel
-    private lateinit var presenter: MobileDetailPresenter
+    @Inject
+    lateinit var presenter: MobileDetailPresenter
     private lateinit var detailName: TextView
     private lateinit var detailDes: TextView
     private lateinit var detailprice: TextView
@@ -47,7 +49,7 @@ class MobileDetailActivity : AppCompatActivity(), MobileDetailInterface {
 
     private fun onView() {
         photoPagerAdapter = PhotoPagerAdapter(supportFragmentManager)
-        presenter = MobileDetailPresenter(this)
+
         viewPager = findViewById(R.id.viewpager)
         detailName = findViewById(R.id.detailName)
         detailRating = findViewById(R.id.detailRating)
