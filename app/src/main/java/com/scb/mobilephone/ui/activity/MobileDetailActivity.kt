@@ -2,7 +2,6 @@ package com.scb.mobilephone.ui.activity
 
 import android.os.Bundle
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.scb.mobilephone.R
 import com.scb.mobilephone.ui.adapter.PhotoPagerAdapter
@@ -14,8 +13,10 @@ import javax.inject.Inject
 class MobileDetailActivity : BaseActivity(), MobileDetailInterface {
 
     private lateinit var mobile: MobileModel
+
     @Inject
     lateinit var presenter: MobileDetailPresenter
+
     private lateinit var detailName: TextView
     private lateinit var detailDes: TextView
     private lateinit var detailprice: TextView

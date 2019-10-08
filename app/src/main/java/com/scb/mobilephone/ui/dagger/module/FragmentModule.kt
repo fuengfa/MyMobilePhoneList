@@ -12,7 +12,7 @@ abstract class FragmentModule {
     @ContributesAndroidInjector
     abstract fun contributeFavoriteFragment(): FavoriteFragment
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [MobilePresenterModule::class])
     abstract fun contributeMobileFragment(): MobileFragment
 
     @ContributesAndroidInjector

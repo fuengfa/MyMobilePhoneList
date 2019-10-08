@@ -6,11 +6,11 @@ import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
 @Module
-abstract class ActivityModule{
+abstract class ActivityModule {
 
-    @ContributesAndroidInjector(modules = [FragmentModule::class])
-    abstract fun contributeMainActivity() : MainActivity
+    @ContributesAndroidInjector
+    abstract fun contributeMainActivity(): MainActivity
 
-    @ContributesAndroidInjector(modules = [FragmentModule::class])
-    abstract fun contributeMobileDetailActivity() : MobileDetailActivity
+    @ContributesAndroidInjector(modules = [MobileDetailPresenterModule::class])
+    abstract fun contributeMobileDetailActivity(): MobileDetailActivity
 }

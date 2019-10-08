@@ -9,6 +9,7 @@ import retrofit2.Response
 import javax.inject.Inject
 
 class MobileDetailPresenter @Inject constructor(val view: MobileDetailInterface) {
+
     private var listPictures: ArrayList<Pictures> = ArrayList()
 
     private val pictureCallback = object : Callback<List<Pictures>> {
@@ -21,7 +22,7 @@ class MobileDetailPresenter @Inject constructor(val view: MobileDetailInterface)
         }
     }
 
-    fun loadPictures(mobile: MobileModel){
+    fun loadPictures(mobile: MobileModel) {
         listPictures = ArrayList()
         ApiManager.mobileService.pictures(mobile.id).enqueue(pictureCallback)
     }

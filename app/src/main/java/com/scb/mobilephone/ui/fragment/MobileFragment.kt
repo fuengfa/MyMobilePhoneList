@@ -28,8 +28,8 @@ class MobileFragment : BaseFragement(),
     private var mobileAdapter = MobileAdapter(this)
     private lateinit var recyclerViewMobile: RecyclerView
     private lateinit var mobileList: List<MobileModel>
-    @Inject
-    lateinit var logString: LogString
+//    @Inject
+//    lateinit var logString: LogString
 
 
     override fun onCreateView(
@@ -47,8 +47,8 @@ class MobileFragment : BaseFragement(),
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val roomDatabase = getRoomDatabase()
-        logString.showLog()
-
+//        logString.showLog()
+//        presenter = MobileFragmentPresenter(this)
         presenter.init(roomDatabase)
         setRecyclerView(view)
         swipe_toRefresh.setOnRefreshListener {

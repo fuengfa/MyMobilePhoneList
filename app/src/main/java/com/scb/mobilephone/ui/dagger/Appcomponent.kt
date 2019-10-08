@@ -2,7 +2,7 @@ package com.scb.mobilephone.ui.dagger
 
 import android.app.Application
 import com.scb.mobilephone.ui.dagger.module.ActivityModule
-import com.scb.mobilephone.ui.dagger.module.PresenterModule
+import com.scb.mobilephone.ui.dagger.module.FragmentModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
@@ -11,8 +11,8 @@ import javax.inject.Singleton
 @Singleton
 @Component(
     modules = [AndroidSupportInjectionModule::class,
-               ActivityModule::class,
-                PresenterModule::class]
+        ActivityModule::class,
+        FragmentModule::class]
 )
 
 interface AppComponent {
